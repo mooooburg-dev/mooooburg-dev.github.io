@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "펼침 연산자로 배열을 본떠라"
+title:  "펼침 연산자로 배열을 본떠라."
 date:   2020-05-12 21:03:38 +0530
 categories: Javascript ES6 
 ---
