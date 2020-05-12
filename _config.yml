@@ -42,4 +42,16 @@ header_pages:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate-v2
 #  - jekyll-feed
+
+# Paginate config
+pagination:
+  enabled: true
+  per_page: 4
+  sort_reverse: true
+  title: ':title'
+  permalink: '/page/:num_'
+  trail: 
+    before: 2
+    after: 2

@@ -3,7 +3,8 @@ layout: page
 ---
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
-	{%- for post in site.posts -%}
+	<!-- {%- for post in site.posts -%} -->
+	{%- for post in paginator.posts -%}
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<div class="post-meta">
@@ -21,4 +22,5 @@ layout: page
 	{%- endfor -%}
 </ul>
 {%- endif -%}
+{% include pagination.html %}
 
