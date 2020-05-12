@@ -22,7 +22,7 @@ texture:
   style: black
   showNav: false
   showPicker: true
-  disqus_shortname: drawyourmind
+  disqus_shortname: mooooburg-dev-github-io
 
   # generate social links in footer
   social_links:
