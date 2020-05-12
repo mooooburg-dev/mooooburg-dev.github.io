@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "펼침 연산자로 배열을 본떠라."
+title:  "펼침 연산자로 배열을 본떠라"
 date:   2020-05-12 21:03:38 +0530
 categories: Javascript ES6 
 ---
@@ -32,6 +32,6 @@ function formatBook(title, author, price) {
 console.log(formatBook(...book)); // Reasons and Persons by Derek Parfit $19.99
 ```
 
-매개변수의 양이 바뀌얼을 때도 코드를 고치지 않아도 된다.
+매개변수의 양이 바뀌었을 때도 코드를 고치지 않아도 된다.
 
 
