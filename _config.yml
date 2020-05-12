@@ -1,4 +1,4 @@
-title: mooooburg-dev
+title: Developer Note
 author: mooooburg-dev
 email: jeongmupark@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -17,7 +17,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Jeongmu Park
-  tagline: Developer
+  tagline: Developer Note
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
