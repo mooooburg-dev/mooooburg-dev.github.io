@@ -16,8 +16,8 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
+  title: Jeongmu Park
+  tagline: Developer
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
@@ -25,9 +25,9 @@ texture:
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    twitter: jeongmu
+    github:  mooooburg-dev
+    linkedIn: /in/jeongmu-park-7b064b27
     rss: rss
  
 
