@@ -9,7 +9,6 @@ categories: MacOS Browser
 ## Chrome  
 일반 새로고침 : ⌘ + R  
 강력 새로고침(캐시삭제 및 새로고침) : ⌘⇧ + R
-  
 
 ## Safari
 캐시 삭제후 새로고침 : ⌘E ⌘R
