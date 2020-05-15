@@ -4,8 +4,7 @@ title:  "oh-my-zsh 터미널에서 자주 사용하는 git 단축키 모음"
 date:   2020-05-15 17:05:36 +0530
 categories: git 
 ---
-oh-my-zsh 터미널을 사용하면 git 명령어를 단축키로 사용할 수 있다.  
-[출처 ohmyzsh Cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet){: target="_blank"}
+oh-my-zsh 터미널을 사용하면 git 명령어를 단축키로 사용할 수 있다.  [더 많은 정보 보기](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet){: target="_blank"}
 
 
 * **gst** - *git status* : 현재 local repository의 상태를 보여준다.
