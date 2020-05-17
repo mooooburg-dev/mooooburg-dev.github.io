@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tomcat에서 JDBC와 관련된 오류가 날때"
+title:  "이클립스 Tomcat 실행시 JDBC와 관련된 오류가 날때"
 description: "Web Deployment Assembly 확인하기"
 date:   2020-05-17 21:57:36 +0530
 categories: Java Eclipse
