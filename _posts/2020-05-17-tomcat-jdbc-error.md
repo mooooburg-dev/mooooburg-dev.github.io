@@ -8,7 +8,7 @@ categories: Java Eclipse
 Build Path에 ojdbc 파일을 연결해 사용하다가 해당 프로젝트를 복사해서 새로운 프로젝트를 생성한뒤 톰캣을 실행하는 과정에서 dataSource와 관련된 에러를 뱉으면서 home에 접근하지 못하는 오류가 발생했다.
 
 
-```XML
+```xml
 <!-- 에러가 발생하던 root-context.xml 부분 -->
 <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
   <property name="driverClassName" value=""></property>
