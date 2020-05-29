@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Vue] input에 int와 float만 담기"
+title:  "[Vue.js] input에서 int와 float만 혀용하기"
 description: ""
 date:   2020-05-29 19:27:36 +0530
 categories: Vue Javascript 
@@ -19,6 +19,6 @@ Vue.use(onlyFloat);
 <input type="text" v-float>
 ```
 
-천단위 콤마와 같은 기능은 따로 없다.
+현재 버전에는 천 단위 콤마와 같은 기능은 따로 없다.
 
 
