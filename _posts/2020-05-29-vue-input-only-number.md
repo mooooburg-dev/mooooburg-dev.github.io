@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Vue.js] input에서 int와 float만 허용하기"
+title:  "Vue.js | input에서 int와 float만 허용하기"
 description: ""
 date:   2020-05-29 19:27:36 +0530
 categories: Vue Javascript 
