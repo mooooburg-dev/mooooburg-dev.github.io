@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Vue.js | v-int 활용하기 int와 float만 허용한다"
+title:  "Vue.js int와 float만 허용한다. v-int 사용하기"
 description: ""
 date:   2020-05-29 19:27:36 +0530
 categories: Vue Javascript 
