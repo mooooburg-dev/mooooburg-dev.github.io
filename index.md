@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 pagination:
   enabled: true
 ---
