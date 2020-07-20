@@ -3,12 +3,12 @@ layout: post
 title:  "AWS | RDS 인코딩 UTF8 설정하기"
 description: "AWS RDS에 한글 입력 문제가 있을때 인코딩을 설정하자"
 # date:   2020-07-20 19:27:36 +0530
-categories: Vue Javascript 
+categories: AWS RDS DB 
 ---
 
-AWS RDS를 이용해 MariaDB를 설치하면 Default 인코딩이 UTF-8이 아닌 latin-1로 설정되어 있다.  
-그렇기 때문에 RDS DB에 한글을 삽입하는 경우 에러가 발생하거나 한글이 깨지는 오류가 발생한다.  
-위와같은 상황에서 DB의 인코딩을 UTF-8로 변경하여 한글 깨짐 현상을 해결할 수 있다
+AWS RDS를 이용해 MariaDB를 설치하면 Default 인코딩이 UTF-8이 아닌 latin-1로 설정되어 있다. 그렇기 때문에 RDS DB에 한글을 삽입하는 경우 에러가 발생하거나 한글이 깨지는 오류가 발생한다. 위와 같은 상황에서 DB의 인코딩을 UTF-8로 변경하여 한글 깨짐 현상을 해결할 수 있다.
+
+---
 
 1. AWS Management Console에 접속후 RDS 이동
 2. 좌측 메뉴에 파라미터 그룹 -> 파라미터 그룹 생성
