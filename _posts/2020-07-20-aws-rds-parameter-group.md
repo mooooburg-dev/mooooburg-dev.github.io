@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AWS | RDS 인코딩 UTF8 설정하기"
+title:  "AWS RDS 인코딩 UTF8 설정하기"
 description: "AWS RDS에 한글 입력 문제가 있을때 인코딩을 설정하자"
 # date:   2020-07-20 19:27:36 +0530
 categories: AWS RDS DB 
