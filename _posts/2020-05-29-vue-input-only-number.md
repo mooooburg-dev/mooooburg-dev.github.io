@@ -8,9 +8,6 @@ categories: Vue Javascript
 input 텍스트 필드에 숫자만 입력해야하는 경우 사용한다.  
 <https://www.npmjs.com/package/vue-input-only-number>{: target="blank"}
 
-<!-- [더 많은 정보 보기](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet){: target="_blank"} -->
-
-
 ```javascript
 import onlyInt, { onlyFloat } from 'vue-input-only-number';
 
