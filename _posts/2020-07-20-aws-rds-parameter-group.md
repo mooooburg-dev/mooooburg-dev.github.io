@@ -6,7 +6,8 @@ description: "AWS RDS 한글 입력 문제가 있을 때는 인코딩을 설정�
 categories: AWS RDS DB 
 ---
 
-AWS RDS를 이용해 MariaDB를 설치하면 Default 인코딩이 UTF-8이 아닌 latin-1로 설정되어 있다. 그렇기 때문에 RDS DB에 한글을 삽입하는 경우 에러가 발생하거나 한글이 깨지는 오류가 발생한다. 위와 같은 상황에서 DB의 인코딩을 UTF-8로 변경하여 한글 깨짐 현상을 해결할 수 있다.
+AWS RDS를 이용해 MariaDB를 설치하면 Default 인코딩이 UTF-8이 아닌 latin-1로 설정되어 있다. 그렇기 때문에 RDS DB에 한글을 삽입하는 경우 에러가 발생하거나 한글이 깨지는 오류가 발생한다.  
+위와 같은 상황에서 DB의 인코딩을 UTF-8로 변경하여 한글 깨짐 현상을 해결할 수 있다.
 
 ---
 
