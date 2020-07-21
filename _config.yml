@@ -17,7 +17,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Jeongmu Park
-  tagline: dev clipboard
+  tagline: Dev Clipboard
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
