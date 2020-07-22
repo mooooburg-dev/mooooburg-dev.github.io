@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "iOS iPad detect 이슈"
-description: "iPad만 분기처리를 해야하는데.."
+title:  "iOS iPad detect 이슈 해결"
+description: "iPad의 userAgent가 macOS라고?"
 # date:   2020-07-20 19:27:36 +0530
 categories: Javascript 
 ---
