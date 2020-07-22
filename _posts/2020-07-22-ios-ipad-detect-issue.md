@@ -6,15 +6,15 @@ description: "iPad의 userAgent가 macOS라고?"
 categories: Javascript 
 ---
 
-관련 링크  
-<https://github.com/mooooburg-dev/medit-partner-portal/issues/1>{: target="_blank"}
-
 Back-end에서 동적 생성된 blob type의 pdf 파일을 `<object>`태그로 embed 하여 화면 표시 및 프린트 기능을 지원하고 있다.  
 브라우저는 chrome과 safari를 지원하고 있고, tablet(ipad, galaxy tab)을 지원한다.
 
 ![image](https://user-images.githubusercontent.com/18201794/88029065-7652bc80-cb74-11ea-9e8f-0797ee1bdf7a.png)
 
 Invocie 버튼을 클릭해 모달을 띄우고 페이지내에 pdf를 심으려고 했다.
+
+관련 링크  
+<https://github.com/mooooburg-dev/medit-partner-portal/issues/1>{: target="_blank"}
 
 #### 이슈1>  
 ipad chrome/safari에서 pdf가 표시되지 않는다.  
