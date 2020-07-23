@@ -33,7 +33,8 @@ ex) vue-detect-device, vue-ios-decect와 같은 것들..
 chrome 개발자도구에서 ipad로 설정 후 테스트 했을때는 문제가 없었지만 실제 ipad safari로 띄워놓고 보면 문제가 발생하다.  
 우선 사용한 플러그인이 문제일 것이라 생각하고 다른 플러그인을 설치해 사용해 보았으나 하나같이 safari 에서 ipad를 ipad라 인식하지 않았다.  
 
-navigator.userAgent → ***Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15***
+navigator.userAgent로 출력한 내용,  
+***Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15***
 
 userAgent의 문자열에서 'ipad'를 찾으려고 했는데 문자조합에서 ipad가 포함되어 있지 않았고 mac safari와 비교했을때 99% 같은 문자열을 반환하고 있었다.
 ipad safarai가 mac safari와 같은 userAgent를 리턴하면서 mac과 ipad가 같은 놈처럼 굴었다.
