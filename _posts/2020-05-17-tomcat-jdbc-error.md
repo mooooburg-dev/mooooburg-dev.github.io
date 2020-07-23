@@ -18,10 +18,12 @@ Build Path에 ojdbc 파일을 연결해 사용하다가 해당 프로젝트를 �
 </bean>
 ```
 
-위 부분과 관련되어 있는 부분까지 뒤졌지만 원인을 전혀 다른곳에 있었고 이클립스 IDE에서 해결. 외부 라이브러리 파일을 추가할 때 Build Path에 추가를 하는데 ***Deployment Assembly > Web Deployment Assembly***에도 Source(jar)를 추가해줘야 한다.  
+위 부분과 관련되어 있는 부분까지 뒤졌지만 원인을 전혀 다른곳에 있었고 이클립스 IDE에서 해결했다.  
+외부 라이브러리 파일을 추가할 때 Build Path에 추가하는 경우가 있는데
+***Deployment Assembly > Web Deployment Assembly***에도 Source(jar)를 추가해줘야 했다.
 
 ![5F6F1B6B-1AF1-4B4B-A400-04538FB45A56](https://user-images.githubusercontent.com/18201794/82147903-f36b6800-988b-11ea-8b02-611fbd76a63e.png)
 
-
-**만일 테스트 환경에서는 정상적으로 동작하는데 Tomcat에서 JDBC 드라이버에 문제가 생겼다면 나온다면 Web Deployment Assembly를 확인해 봐야 한다.**
+### 정리>
+만일 테스트 환경에서는 정상적으로 동작하는데 Tomcat에서 JDBC 드라이버에 문제가 생겼다면 나온다면 Web Deployment Assembly를 확인해 봐야 한다.
 

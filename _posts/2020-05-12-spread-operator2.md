@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "push() 메서드 대신 펼침 연산자로 원본의 변경을 피하라"
+title:  "push() 메서드 대신 펼침 연산자로 원본의 변경을 피한다"
 date:   2020-05-12 23:39:38 +0530
 categories: Javascript ES6 
 ---

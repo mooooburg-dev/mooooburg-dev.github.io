@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "oh-my-zsh 터미널에서 자주 사용하는 git 단축키 모음"
+title:  "oh-my-zsh 터미널에서 자주 사용하는 git 단축 명령어 모음"
 date:   2020-05-15 17:05:36 +0530
 categories: git 
 ---

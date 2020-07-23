@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "for~in & for~of 반복문 한줄 정리"
+title:  "for in, for of 한줄 정리"
 date:   2020-05-13 01:00:38 +0530
 categories: Javascript ES6
 ---
