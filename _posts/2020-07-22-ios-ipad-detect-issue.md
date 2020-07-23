@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "iOS iPad detect 이슈 해결"
+title:  "iPad 분기 처리 이슈"
 description: "iPad의 userAgent가 macOS로 나온다고??"
 # date:   2020-07-20 19:27:36 +0530
 categories: Javascript 
