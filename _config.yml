@@ -40,6 +40,7 @@ header_pages:
 # Build settings
 # theme: texture
 
+asset_url: /assets
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
