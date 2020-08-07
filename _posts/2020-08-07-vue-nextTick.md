@@ -17,14 +17,14 @@ Vue로 개발을 진행하다면 보면 기존과 약간 다른 개발 방식에
 created: function(){
   // ...
 
-  this.$netxTick(() => {
+  this.$nextTick(() => {
     let dom = document.getElementById('item');
     dom.style.backgroundColor = 'orange';
   })
 }
 ```
 
-코드를 $nextTick으로 감싼뒤 callback을 통해 DOM에 접근한다. 그렇게 되면 Vue.js에서 데이터를 갱신하고 화면UI의 렌더링까지 완료된 후 nextTick의 콜백이 실행되고 DOM으로 접근하는 과정을 거치게 된다.
+코드를 $nextTick으로 감싼뒤 callback을 통해 DOM에 접근한다. 그렇게 되면 Vue.js에서 데이터를 갱신하고 **화면UI 렌더링까지 완료된 후 nextTick의 콜백이 실행되고 DOM으로 접근**하는 과정을 거치게 된다.
 
 [$nextTick](https://kr.vuejs.org/v2/api/index.html#Vue-nextTick){: target="_blank"}
 
