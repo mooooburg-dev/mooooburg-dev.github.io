@@ -45,6 +45,7 @@ AWS RDS를 이용해 MariaDB를 설치하면 Default 인코딩이 UTF-8이 아�
 ALTER TABLE 테이블명 CONVERT TO CHARACTER SET 'utf8mb4';
 ```
 
+---
 
 ## MariaDB 오류사항  
 위에서 적용한 파라미터 중
