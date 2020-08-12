@@ -40,6 +40,12 @@ AWS RDS를 이용해 MariaDB를 설치하면 Default 인코딩이 UTF-8이 아�
 
 ---
 
+파라미터 그룹 설정 이전에 생성된 테이블에는 적용이 되지 않기때문에 테이블에 직접 반영을 하기 위해서는 따로 설정해야 한다.
+```SQL
+ALTER TABLE 테이블명 CHARACTER SET = 'utf8mb4'
+```
+
+
 ## MariaDB 오류사항  
 위에서 적용한 파라미터 중
 c**haracter_set_database, collation_connetion** 2가지 항목은 MariaDB에서만 RDS 파라미터 그룹으로는 변경이 되지 않는다.  
