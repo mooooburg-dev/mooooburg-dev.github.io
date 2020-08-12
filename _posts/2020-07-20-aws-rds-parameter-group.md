@@ -46,6 +46,15 @@ c**haracter_set_database, collation_connetion** 2가지 항목은 MariaDB에서�
 아래 쿼리로 직접 실행해 변경한다.
 
 ```SQL
-ALTER DATABASE 데이터베이스명 CHARACTER SET = 'utf8-mb4'
+ALTER DATABASE 데이터베이스명 CHARACTER SET = 'utf8mb4'
 COLLATE = 'utf8mb4_general_ci';
 ```
+
+아래 쿼리로 확인한다.
+
+```SQL
+show variables like 'c%';
+```
+
+![image](https://user-images.githubusercontent.com/18201794/89979952-d2a88800-dcab-11ea-9e9f-bf55821d9921.png)
+
