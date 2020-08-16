@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DOM에 접근해야 하는 시점이 애매할 때 $nextTick 사용하기"
-description: "화면에는 있는데 찾을 수 없는 요소라고 빨간줄을 보여줄 때"
+description: "화면에는 있는데 찾을 수 없는 요소라고 콘솔에 에러가 뜰 때"
 date:   2020-08-07 00:00:00 +0530
 categories: Vue.js
 ---
