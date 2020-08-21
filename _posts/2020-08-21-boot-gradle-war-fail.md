@@ -10,8 +10,8 @@ categories: SpringBoot, Gradle
 단순 path문제 또는 그 이상의 문제일 것을 예상하고 여러가지 방식을(삽질을) 시도하다가 아래 포스팅들까지 적용해 봤지만 마찬가지였다.
 
 **gradle build을 이용한 war 배포 관련 포스팅**  
-  - https://gigas-blog.tistory.com/115{: target="_blank"}
-  - https://cpdev.tistory.com/46{: target="_blank"}
+  - <https://gigas-blog.tistory.com/115>{: target="_blank"}
+  - <https://cpdev.tistory.com/46>{: target="_blank"}
 
 위의 포스팅 내용을 보면 메인 jar와 war 빌드시에 메인 클래스를 실행하는 방식이 다르다는 이야기인데 왠지 그럴듯 하여 적용해봤지만 같은 문제가 발생하였다.  
 추가 테스트를 진행하던 중에 이상한 점을 발견했는데 SpringBoot 프로젝트 생성시 여러 의존성을 선택 주입하는데 이 부분에서 만약 아무것도 선택하지 않은 플레인 상태에서 war 빌드만 진행하고 톰캣에 올렸을 경우는 404가 발생하지 않고 정상 배포가 되었다.  
@@ -25,10 +25,10 @@ categories: SpringBoot, Gradle
 위 부분에 대해 다양한 방법을  시도하다가 결국 내장 톰캣을 테스트 해봤다. 내장 톰캣의 경우 컴파일된 파일을 실행만 하면 톰캣이 실행되는데 이 경우 위의 삽질이 무색할 정도로 너무 깔끔하게 정상 작동하였다.
 
 **[REST API 실습] 4. Springboot 프로젝트 AWS EC2 인스턴스에 배포**  
-https://wickies.tistory.com/102{: target="_blank"}  
+<https://wickies.tistory.com/102>{: target="_blank"}  
 
 스프링부트 jar 실행하기 (Run spring boot runnable jar)  
-https://navy-apple.com/dev/spring/boot-runnable-jar{: target="_blank"}  
+<https://navy-apple.com/dev/spring/boot-runnable-jar>{: target="_blank"}  
 
 
 
