@@ -21,7 +21,7 @@ categories: SpringBoot Gradle
   - implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3'
 
 
-진행하고 있는 프로젝트의 경우는 위 두가지를 제외하면 정상 작동할 것으로 예상됐지만 제외하고 빌드할 경우 에러가 발생해서 눈으로 테스트 해보지는 못했다.  
+진행하고 있는 프로젝트의 경우는 위의 두가지 의존성을 제외하면 정상 작동할 것으로 예상됐지만 필수 사용하고 있는 의존성이라 제외하고 빌드할 경우 에러가 발생해서 눈으로 직접 확인해 보지는 못했다.  
 위 부분에 대해 다양한 방법을  시도하다가 결국 내장 톰캣을 테스트 해봤다. 내장 톰캣의 경우 컴파일된 파일을 실행만 하면 톰캣이 실행되는데 이 경우 위의 삽질이 무색할 정도로 너무 깔끔하게 정상 작동하였다.
 
 **[REST API 실습] 4. Springboot 프로젝트 AWS EC2 인스턴스에 배포**  
@@ -29,6 +29,9 @@ categories: SpringBoot Gradle
 
 스프링부트 jar 실행하기 (Run spring boot runnable jar)  
 <https://navy-apple.com/dev/spring/boot-runnable-jar>{: target="_blank"}  
+
+사실 내장 톰캣을 사용할 생각을 안하고 있었는데 뜻밖에 내장 톰캣을 돌리는 방식으로 바뀌었다. 성능상 차이가 없다는 내용들이 많아서 의심하지 않고 우선 적용했다.
+
 
 
 
