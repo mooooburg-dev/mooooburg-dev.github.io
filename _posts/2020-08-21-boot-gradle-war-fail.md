@@ -3,7 +3,7 @@ layout: post
 title:  "SpringBoot Gradle 프로젝트에서 war 빌드시 톰캣에 정상 배포 실패 현상"
 description: "SpringBoot 내장 톰캣을 만나다"
 date:   2020-08-21 00:00:00 +0530
-categories: SpringBoot, Gradle
+categories: SpringBoot Gradle
 ---
 기존 maven 프로젝트로 진행한 war 파일을 톰캣에 배포 하는 경우, 외장 톰캣의 기본 패스인 webapps를 통해 문제 없이 프로젝트를 실행시켰다.
 하지만 해당 프로젝트를 SpringBoot Gradle 방식으로 변경하고 비슷한 방법으로 war 파일 빌드 후 같은 방식으로 톰캣에 올렸는데 404에러가 발생했다.  
