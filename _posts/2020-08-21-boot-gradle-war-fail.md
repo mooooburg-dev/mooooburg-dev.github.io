@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SpringBoot Gradle 프로젝트에서 war 빌드시 톰캣에 정상 배포 실패 현상"
-description: "SpringBoot의 내장 톰캣을 만나다"
+description: "SpringBoot 내장 톰캣을 만나다"
 date:   2020-08-21 00:00:00 +0530
 categories: SpringBoot, Gradle
 ---
