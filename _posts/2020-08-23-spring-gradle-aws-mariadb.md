@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spring gradle 환경에서 aws mariaDB 연결(기본)"
+title:  "Spring 환경에서 aws mariaDB 연결하기"
 description: "mariaDB 연결 기본 정리"
 date:   2020-08-23 09:00:00 +0530
 categories: SpringBoot Gradle
