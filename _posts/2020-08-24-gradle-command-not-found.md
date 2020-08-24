@@ -10,4 +10,3 @@ sudo 붙여서 해결 안되고 chmod 권한 조정으로 해결.
 
 > chmod +x gradlew
 
-
