@@ -8,5 +8,6 @@ categories: gradle gradlew build
 터미널에서 스프링 빌드 하는 상황에서 퍼미션이나 파일을 찾을 수 없다는 에러가 나올때 권한 문제일 가능성이 크다.  
 sudo 붙여서 해결 안되고 chmod 권한 조정으로 해결.
 
+```
 > chmod +x gradlew
-
+```
