@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "터미널에서 graldew 빌드시 command not found, permission denined 뜰때 권한 조정하기"
+title:  "터미널에서 gradlew 빌드시 command not found, permission denined 뜰때 권한 조정하기"
 description: "gradlew에 권한 부여하면 끝"
 date:   2020-08-24 09:00:00 +0530
 categories: gradle gradlew build
