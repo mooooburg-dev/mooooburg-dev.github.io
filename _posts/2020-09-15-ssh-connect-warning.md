@@ -7,7 +7,7 @@ categories: ssh
 ---
 
 ```
-ssh -i pem파일경로 ec2-user@IP주소
+$ ssh -i pem파일경로 ec2-user@IP주소
 ```
 위 코드로 aws의 ec2로 접속을 하려고 했다. 오래전도 아니고 불과 며칠전에 잘 접속했었던 방법이다.  
 그렇지만 나를 맞이한 건 WARNING 코드
@@ -47,5 +47,5 @@ Host key verification failed.
 
 발생된 SSH 접속 오류는 IP는 동일하지만 목적지 서버 장비가 바뀌었다거나 VMware와 같은 가상 컴퓨터의 IP는 동일하지만 실질적인(물리적) 서버가 바뀌었을 경우 나오는 일종의 경고성 알림이다.
 ```
-ssh-keygen -R 대상IP주소
+$ ssh-keygen -R 대상IP주소
 ```
