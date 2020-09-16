@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'ssh 접속 오류 REMOTE HOST IDENTIFICATION HAS CHANGED'
+title: 'ssh 접속 오류 "REMOTE HOST IDENTIFICATION HAS CHANGED"'
 description: 'ssh-keygen으로 해결'
 date: 2020-09-15 09:00:00 +0530
 categories: ssh
