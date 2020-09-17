@@ -6,12 +6,6 @@ date: 2020-09-17 10:14:00 +0530
 categories: terminal command find
 ---
 
-# find 커맨드로 파일 검색하기
-
-**참고 링크**
-
-[[맥 터미널 / Unix] find 커맨드로 파일 검색하기 - Mac In June](https://macinjune.com/all-posts/mac/terminal/%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90-unix-find-command%EB%A1%9C-%ED%8C%8C%EC%9D%BC-%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0/)
-
 맥 터미널(unix) 환경에서 find 커맨드를 활용하여 파일을 검색하는 방법이다. GUI 환경에서 스팟라이트나 파인더를 이용하여 파일을 검색하는 방법이 있다면, 마찬가지로 쉘 환경에서도 파일을 검색하는 방법들이 다양하게 존재한다.
 
 - locate : 미리 빌드된 데이터베이스에서 빠르게 검색
@@ -100,3 +94,7 @@ $ find . -name "exam*"
 $ find . -not -name "ex*"
 
 ```
+
+**참고 링크**
+
+[[맥 터미널 / Unix] find 커맨드로 파일 검색하기 - Mac In June](https://macinjune.com/all-posts/mac/terminal/%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90-unix-find-command%EB%A1%9C-%ED%8C%8C%EC%9D%BC-%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0/)
