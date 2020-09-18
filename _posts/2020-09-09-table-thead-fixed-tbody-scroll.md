@@ -30,29 +30,29 @@ categories: CSS
     </colgroup>
     <thead>
       <tr>
-        <th class="text-center fixedHeader sticky-th" rowspan="2">No</th>
-        <th class="text-center fixedHeader sticky-th" rowspan="2">{{ $t('pm.ability.name') }}</th>
-        <th class="text-center fixedHeader sticky-th" colspan="2">{{ $t('pm.final.finResult') }}</th>
-        <th class="text-center fixedHeader sticky-th" colspan="2">{{ $t('pm.final.abilityview') }}</th>
-        <th class="text-center fixedHeader sticky-th" rowspan="2">{{ $t('pm.final.totalLevel') }}</th>
+        <th class="text-center fixedHeader sticky-th" rowspan="2"></th>
+        <th class="text-center fixedHeader sticky-th" rowspan="2"></th>
+        <th class="text-center fixedHeader sticky-th" colspan="2"></th>
+        <th class="text-center fixedHeader sticky-th" colspan="2"></th>
+        <th class="text-center fixedHeader sticky-th" rowspan="2"></th>
       </tr>
       <tr>
-        <th class="text-center fixedHeader2 sticky-th-two">{{ $t('pm.final.goaltable2') }}</th>
-        <th class="text-center fixedHeader2 sticky-th-two">{{ $t('pm.final.goaltable3') }}</th>
-        <th class="text-center fixedHeader2 sticky-th-two">{{ $t('pm.final.goaltable2') }}</th>
-        <th class="text-center fixedHeader2 sticky-th-two">{{ $t('pm.final.goaltable3') }}</th>
+        <th class="text-center fixedHeader2 sticky-th-two"></th>
+        <th class="text-center fixedHeader2 sticky-th-two"></th>
+        <th class="text-center fixedHeader2 sticky-th-two"></th>
+        <th class="text-center fixedHeader2 sticky-th-two"></th>
       </tr>
     </thead>
     <tbody>
       <template v-for="(item, item_idx) in empListBySort">
         <tr v-if="lvStatus[item.finalLevel] || !item.finalLevel " :key="item_idx" class="emp-by-sort">
           <td class="text-center"></td>
-          <td><img :src="item.avatarUrl" class="table_avatar" />{{ item.empNm }}</td>
-          <td class="text-center">{{ lvStr[item.finAvSelfLv] }}</td>
-          <td class="text-center txt-700">{{ lvStr[item.finAvMentorLv] }}</td>
-          <td class="text-center">{{ `${item.compSfLv ? 'Level ' + item.compSfLv : ''}` }}</td>
-          <td class="text-center txt-700">{{ `${item.compMtLv ? 'Level ' + item.compMtLv : ''}` }}</td>
-          <td class="text-center txt-700 text-primary">{{ item.finalLevel }}</td>
+          <td><img :src="item.avatarUrl" class="table_avatar" /></td>
+          <td class="text-center"></td>
+          <td class="text-center txt-700"></td>
+          <td class="text-center"></td>
+          <td class="text-center txt-700"></td>
+          <td class="text-center txt-700 text-primary"></td>
         </tr>
       </template>
     </tbody>
