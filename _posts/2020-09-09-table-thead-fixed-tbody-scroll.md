@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'table의 thead 고정과 tbody 스크롤'
-description: '골치아픈 테이블 스크롤 박제'
+title: 'table의 thead 고정과 tbody 스크롤 처리하기'
+description: '골치아픈 테이블 스크롤 자체 템플릿 박제하기'
 date: 2020-09-09 10:14:00 +0530
 categories: CSS
 ---
