@@ -1,3 +1,4 @@
+
 # texture
 
 A configurable jekyll theme for simply beautiful blogs..
