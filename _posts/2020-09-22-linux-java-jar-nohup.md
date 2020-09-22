@@ -3,7 +3,7 @@ layout: post
 title: 'Linux java -jar 백그라운드에서 실행(nohup)'
 description: 'java를 백그라운드에서 실행하기'
 date: 2020-09-22 15:15:00 +0530
-categories: terminal command find
+categories: java
 ---
 
 1. 리눅스 환경에서 Java(jar)를 데몬처럼 실행
