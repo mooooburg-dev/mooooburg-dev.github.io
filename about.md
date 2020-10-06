@@ -4,4 +4,7 @@ pagination:
   enabled: true
 ---
 
-about 페이지입니다.
+개발노트
+
+jeongmupark@gmail.com  
+ [http://drawyourmind.com](http://drawyourmind.com)
