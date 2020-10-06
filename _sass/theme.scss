@@ -261,7 +261,7 @@ header {
       @include fluidType(15px, 17px);
       transition: background-color 0.3s ease-in;
       &:hover {
-        background-color: rgba(#fff, 0.15);
+        // background-color: rgba(#fff, 0.15);
         cursor: pointer;
       }
     }
