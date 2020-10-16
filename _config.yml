@@ -6,8 +6,8 @@ description: > # this means to ignore newlines until "show_exerpts:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: ""
-url: "https://mooooburg-dev.github.io"
+baseurl: ''
+url: 'https://mooooburg-dev.github.io'
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -16,9 +16,9 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Jeongmu Park
+  title: 박정무 개발노트
   tagline: Dev Clipboard
-  date_format: "%b %-d, %Y"
+  date_format: '%b %-d, %Y'
   style: black
   showNav: true
   showPicker: false
@@ -27,10 +27,9 @@ texture:
   # generate social links in footer
   social_links:
     twitter: jeongmu
-    github:  mooooburg-dev
+    github: mooooburg-dev
     linkedIn: in/jeongmu-park-7b064b27
     rss: rss
- 
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
