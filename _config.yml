@@ -16,7 +16,7 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: 박정무 개발노트
+  title: 개발노트
   tagline: Dev Clipboard
   date_format: '%b %-d, %Y'
   style: black
