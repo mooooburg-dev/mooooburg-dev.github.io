@@ -5,8 +5,6 @@ div.highlighter-rouge {
   position: relative;
   right: 150px;
   margin: 40px 0;
-  color: palevioletred;
-  font-size: 11pt;
 }
 
 .highlight {
@@ -23,6 +21,8 @@ code {
   line-height: 1.4em;
   tab-size: 4;
   background-color: #f4f4f4;
+  color: palevioletred;
+  font-size: 11pt;
 }
 
 .post-container blockquote {
