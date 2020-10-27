@@ -12,7 +12,7 @@ categories: javascript
 
 ```js
 // js
-document.querySelector('#qnaFile').val('');
+document.querySelector('#qnaFile').value = null;
 
 // jquery
 $('#qnaFile').val('');
