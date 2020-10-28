@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'AWS CloudFront 적용하기'
+title: 'AWS CloudFront'
 description: ''
 date: 2020-10-28 18:06:00 +0530
 categories: aws
