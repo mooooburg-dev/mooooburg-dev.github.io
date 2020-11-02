@@ -17,7 +17,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: 개발노트
-  tagline: Dev Clipboard
+  tagline: dev.note
   date_format: '%b %-d, %Y'
   style: black
   showNav: true
