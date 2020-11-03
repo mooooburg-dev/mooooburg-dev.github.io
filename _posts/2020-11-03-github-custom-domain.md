@@ -10,11 +10,11 @@ categories: aws github domain
 
 `drawyourmind.com` 도메인은 AWS의 `Route53`으로 관리 중이라 `dev.drawyourmind.com` 레코드를 생성했다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f27a1a78-7bad-4987-bea5-bc70a9b4f249/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f27a1a78-7bad-4987-bea5-bc70a9b4f249/Untitled.png)
+![image](https://user-images.githubusercontent.com/18201794/97936957-8fe4e080-1dc0-11eb-946f-1a2976ce1482.png)
 
 `Route53` 레코드 설정에서 `CNAME`을 `github.io`의 페이지 주소로 설정한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25a0603d-9fe6-499a-b665-9b89b15f6896/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25a0603d-9fe6-499a-b665-9b89b15f6896/Untitled.png)
+![image](https://user-images.githubusercontent.com/18201794/97937006-b99e0780-1dc0-11eb-97e1-190d2cab9c6f.png)
 
 그리고 `github repository option` 화면에서 `Custom domain` 설정을 원하는 도메인으로 셋팅하면 끝!
 
