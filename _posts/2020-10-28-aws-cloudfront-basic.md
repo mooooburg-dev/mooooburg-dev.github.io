@@ -43,3 +43,12 @@ HTTP Response Code : 200: OK
 위와 같은 식으로 에러를 뱉을때 index.html을 보여주면서 정상적인 데이터를 반환하는 처리를 해준다
 
 400, 403, 404 정도
+
+## AWS CLI 활용해 캐시 비우기
+
+도메인이 S3에 직접 액세슬 하는 경우 AWS CLI를 홯용해 파일을 업로드하면 캐시 문제가 발생하지 않지만 CloudFront를 통해 액세스 하면 캐시를 비워야 하는 단계가 추가된다.
+
+```bash
+# AWS 명령줄 인터페이스를 사용하여 파일을 무효화하고 * 와일드카드를 포함하는 경로를 지어하는 경우에는 경로를 따옴표(")로 묶어야 한다.
+$ aws cloudfront create-invalidation --distribution-id distribution_ID --paths "/*"
+```
