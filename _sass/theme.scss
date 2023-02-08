@@ -2,16 +2,7 @@
 @import 'ext/normalize';
 @import 'begin';
 @import 'syntax';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
-@font-face {
-  font-family: 'UhBeepuding';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
 $linkColor: #999;
 $mobileW: 768px;
@@ -29,6 +20,8 @@ $lightGray: #eee;
 }
 
 body {
+  // font-family: 'Nunito Sans', sans-serif;
+  // font-family: 'Roboto', sans-serif;
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
     'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 나눔고딕,
     'Nanum Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', arial, 돋움, Dotum,
