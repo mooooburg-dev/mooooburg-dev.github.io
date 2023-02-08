@@ -21,7 +21,7 @@ texture:
   date_format: '%b %-d, %Y'
   style: black
   showNav: true
-  showPicker: true
+  showPicker: false
   disqus_shortname: mooooburg-dev-github-io
   analytics_id: G-F7SQ155WCF
 
