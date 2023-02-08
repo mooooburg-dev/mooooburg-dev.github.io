@@ -1,9 +1,9 @@
 ---
 layout: post
-title: github page에 custom domain 연결
+title: github page에 커스텀 도메인 연결하기
 description: ''
 date: 2020-11-03
-categories: aws github domain
+categories: github
 ---
 
 현재 블로그 `mooooburg-dev.github.io`에 `dev.drawyourmind.com` 도메인을 연결했다.
