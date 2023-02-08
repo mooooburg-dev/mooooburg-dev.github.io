@@ -1,7 +1,7 @@
 ---
 layout: post
 title: github page에 커스텀 도메인 연결하기
-description: github page로 만든 사이트에 커스텀 도메인을 연결할 수 있다
+description: AWS Route53에서 github page 레코드 생성하기
 date: 2020-11-03
 categories: github
 ---
