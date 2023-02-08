@@ -23,6 +23,7 @@ texture:
   showNav: true
   showPicker: false
   disqus_shortname: mooooburg-dev-github-io
+  analytics_id: G-F7SQ155WCF
 
   # generate social links in footer
   social_links:
