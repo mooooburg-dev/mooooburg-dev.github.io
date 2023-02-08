@@ -3,7 +3,7 @@ layout: post
 title:  "iPad 분기 처리 이슈"
 description: "iPad의 userAgent가 macOS로 나온다고??"
 date:   2020-07-22 00:00:00 +0530
-categories: Javascript 
+categories: javascript
 ---
 
 Back-end에서 동적 생성된 blob type의 pdf 파일을 `<object>`태그로 embed 하여 화면 표시 및 프린트 기능을 지원하고 있다.  

@@ -3,7 +3,7 @@ layout: post
 title:  "이클립스 Tomcat 실행 시 JDBC 관련 오류 해결"
 description: "Web Deployment Assembly 확인하기"
 date:   2020-05-17 21:57:36 +0530
-categories: Java Eclipse
+categories: java
 ---
 Build Path에 ojdbc 파일을 연결해 사용하다가 해당 프로젝트를 복사해서 새로운 프로젝트를 생성한뒤 톰캣을 실행하는 과정에서 dataSource와 관련된 에러를 뱉으면서 home에 접근하지 못하는 오류가 발생했다.
 

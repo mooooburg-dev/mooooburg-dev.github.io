@@ -3,7 +3,7 @@ layout: post
 title: 'table의 thead 고정과 tbody 스크롤 처리하기'
 description: '골치아픈 테이블 스크롤 자체 템플릿 박제하기'
 date: 2020-09-09 10:14:00 +0530
-categories: CSS
+categories: css
 ---
 
 진행중인 프로젝트가 유난히 테이블과의 싸움이다. 그 중 하나가 헤더 고정 이슈인데 `<tr>`이 한개가 아니고 `colspan`, `rowspan`으로 셀이 합쳐지면서 헤더가 고정이 되는 부분들이 있다보니 은근히 노가다 이슈가 있다.

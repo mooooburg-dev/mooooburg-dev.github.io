@@ -2,7 +2,7 @@
 layout: post
 title:  "macOS 크롬, 사파리 캐시 삭제 및 새로고침"
 date:   2020-05-14 14:46:36 +0530
-categories: MacOS Browser
+categories: os browser
 published : false
 ---
 크롬에서는 새로고침을 할때 캐시를 삭제하면서 새로고침을 하는 강력 새로고침이 있다.  

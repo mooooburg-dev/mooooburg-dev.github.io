@@ -3,7 +3,7 @@ layout: post
 title:  "DOM에 접근해야 하는 시점이 애매할 때 $nextTick 사용하기"
 description: "화면에는 있는데 찾을 수 없는 요소라고 콘솔에 에러가 뜰 때"
 date:   2020-08-07 00:00:00 +0530
-categories: Vue.js
+categories: vue
 ---
 Vue로 개발을 진행하다면 보면 기존과 약간 다른 개발 방식에 애매한 상황이 생기는데 그중 하나로 Vue의 데이터와 화면의 UI를 찾아 접근해야 하는 상황에서 DOM을 찾지 못하는 상황이 있다.  
 

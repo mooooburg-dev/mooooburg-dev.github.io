@@ -3,7 +3,7 @@ layout: post
 title: '터미널 find 커맨드로 파일 검색하기'
 description: '자주 사용하는 find 커맨드 정리'
 date: 2020-09-17 10:14:00 +0530
-categories: terminal command find
+categories: cli
 ---
 
 맥 터미널(unix) 환경에서 find 커맨드를 활용하여 파일을 검색하는 방법이다. GUI 환경에서 스팟라이트나 파인더를 이용하여 파일을 검색하는 방법이 있다면, 마찬가지로 쉘 환경에서도 파일을 검색하는 방법들이 다양하게 존재한다.

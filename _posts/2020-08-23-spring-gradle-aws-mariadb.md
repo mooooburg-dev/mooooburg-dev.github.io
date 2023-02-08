@@ -3,7 +3,7 @@ layout: post
 title:  "Spring 환경에서 aws mariaDB 연결하기"
 description: "aws mariaDB 연결 기본 문법"
 date:   2020-08-23 09:00:00 +0530
-categories: SpringBoot Gradle
+categories: springBoot gradle
 ---
 Spring gradle 환경에서 DB를 연결하는 방법은 여러가지가 있겠지만 Java나 Spring 학습단계에서 기본적으로 소개하는 방식이다. 데이터베이스의 정보(DB주소 및 계정정보)가 노출되는 방식이기 때문에 추가 작업이 필요하다.
 

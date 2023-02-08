@@ -2,7 +2,7 @@
 layout: post
 title:  "for in, for of 한줄 정리"
 date:   2020-05-13 01:00:38 +0530
-categories: Javascript ES6
+categories: javascript
 ---
 ES6를 공부하면 접하게 되는 여러 가지 반복문의 형태들 중에 먼저 for~in과 for~of를 간단하게 정리한다면 아래 코드와 같다.
 
