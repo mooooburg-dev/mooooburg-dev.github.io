@@ -1,7 +1,7 @@
 ---
 layout: post
 title: github page에 커스텀 도메인 연결하기
-description: ''
+description: github page로 만든 사이트에 커스텀 도메인을 연결할 수 있다
 date: 2020-11-03
 categories: github
 ---
@@ -11,7 +11,7 @@ categories: github
 
 ![image](https://user-images.githubusercontent.com/18201794/97936957-8fe4e080-1dc0-11eb-946f-1a2976ce1482.png)
 
- Route53에서 `CNAME`을 `github.io`의 페이지 주소로 설정한다.
+Route53에서 `CNAME`을 `github.io`의 페이지 주소로 설정한다.
 
 ![image](https://user-images.githubusercontent.com/18201794/97937006-b99e0780-1dc0-11eb-97e1-190d2cab9c6f.png)
 
@@ -20,6 +20,8 @@ categories: github
 
 - 192.30.252.153
 - 192.30.252.154
+
+
 
 
 
