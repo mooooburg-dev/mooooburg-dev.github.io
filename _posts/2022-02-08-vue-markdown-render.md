@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vue에서 동적 Markdown 데이터 렌더링 하기
-description: copy-webpack-plugin을 활용한 자체 데이터 페칭
+title: Vue에서 자체 페칭을 이용한 동적 Markdown 데이터 렌더링 하기
+description: vue-markdown과 copy-webpack-plugin을 활용한 자체 데이터 페칭과 동적 마크다운 렌더링
 date: 2022-02-09
 published : true
 categories: vue markdown
