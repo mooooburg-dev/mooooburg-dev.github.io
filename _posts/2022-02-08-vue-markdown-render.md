@@ -34,7 +34,9 @@ module.exports = {
 }
 ```
 
-`src/posts` 폴더에 있는 파일들을 dist 폴더 내 `static/posts` 폴더에 복사하도록 설정했다.
+![image](https://user-images.githubusercontent.com/18201794/217805029-b4595ed1-de8a-41b6-8c52-692cde64e47f.png)
+
+`src/posts` 폴더에 있는 파일들을 dist 폴더 내 `static/posts` 폴더에 복사하도록 설정했다. 이미지처럼 dist/static 폴더 하위에 posts 폴더와 md 파일들이 같이 포함되어 빌드 된다.
 
 ```jsx
 const works = [
@@ -58,22 +60,31 @@ const works = [
   path: '/works',
   name: 'works',
   component: WorksView,
-  ***children: works.map((route) => ({
+  **children: works.map((route) => ({
     path: route,
-  })),***
+  })),**
 },
 ```
 
-`router` 데이터에서 works 내 children 속성에 각 작업물의 path를 배열 형태로 설정해 주었다. 이 path는 md 파일명과 동일하도록 설정하고 데이터를 자체적으로 페칭할 때 사용 할 수 있도록 했다.
+`router` 데이터에서 works 내 children 속성에 각 작업물의 path를 배열 형태로 설정해 주었다. 이 path는 md 파일명과 동일하도록 설정하고 데이터를 자체적으로 페칭할 때 url로 사용한다.
 
 ```jsx
-***<work-container :markdown="arrPathName[pageNum - 1]"></work-container>***
+**<work-container :markdown="arrPathName[pageNum - 1]"></work-container>**
 ```
 
 `WorkView` 컴포넌트에서는 하위 컴포넌트인 `WorkContainer`에 `path` 명만 전달한다. pagination 처리는 기존과 동일하게 사용하고 `page`가 바뀔 때 마다 markdown path 데이가 바뀌고 `watch` 구문에서 `getData` 메서드를 호출하게 된다.
 
 ```jsx
-***<vue-markdown v-if="md !== null" :source="md" />***
+**<vue-markdown v-if="md !== null" :source="md" />**
+...
+watch: {
+  markdown: {
+    handler() {
+      this.getData()
+    },
+    immediate: true,
+  },
+},
 ```
 
 `vue-markdown` 라이브러리 컴포넌트에 페칭한 데이터를 전달해서 새로운 화면을 그리도록 처리했다.
