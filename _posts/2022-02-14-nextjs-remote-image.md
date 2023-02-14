@@ -11,14 +11,14 @@ Next.js는 `Image` 컴포넌트를 사용한 이미지 최적화를 지원한다
 
 ```jsx
 const nextConfig = {
-  ***images: {
+  images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '*.blankcdn.com',
       },
     ],
-  },***
+  },
 };
 
 module.exports = nextConfig;
