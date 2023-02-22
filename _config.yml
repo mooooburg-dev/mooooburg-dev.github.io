@@ -2,9 +2,7 @@ title: dev.drawyourmind
 author: mooooburg-dev
 email: jeongmupark@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm a Frontend Developer. Using Javascript, React, Next.js with Typescript. And in backend side, Node.js, Spring. Here is my tech blog web page.
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: ''
 url: 'https://dev.drawyourmind.com'
@@ -23,6 +21,7 @@ texture:
   showNav: true
   showPicker: false
   disqus_shortname: mooooburg-dev-github-io
+  analytics_id: G-F7SQ155WCF
 
   # generate social links in footer
   social_links:
