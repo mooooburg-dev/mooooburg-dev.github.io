@@ -7,7 +7,7 @@ published : true
 categories: aws
 ---
 
-프로젝트를 EC2에 올려서 테스트 해보기 위해서 평소처럼 코드를 clone해서 의존성 패키지를 설치하려고 했다.
+Next.js로 만든 프로젝트를 EC2에 올려서 테스트 해보기 위해 EC2 내부에서 코드를 clone 하고 `yarn`으로 의존성 패키지를 설치하려고 했다.
 
 ```
 [ec2-user@ip-xxx-xx-xx-xxx articles-web]$ yarn
@@ -23,7 +23,7 @@ error https://registry.yarnpkg.com/@mui/material/-/material-5.6.3.tgz: Extractin
 info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
 ```
 
-에러가 나면 안되는 포인트에서 에러가 났다. "ENOSPC: no space left on device, write"라는 걸 보니 어떤 공간이 없다고 하는 것 같다.
+에러가 나면 안되는 포인트에서 에러가 났다. `"ENOSPC: no space left on device, write"`라는 걸 보니 어떤 공간이 없다고 하는 것 같다.
 
 ```
 [ec2-user@ip-xxx-xx-xx-xxx articles-web]$ df -hT
@@ -36,11 +36,12 @@ tmpfs          tmpfs     240M     0  240M   0% /sys/fs/cgroup
 tmpfs          tmpfs      48M     0   48M   0% /run/user/1000
 ```
 
-명령어를 찾아서 확인해보니 프리티어때 기본으로 설정된 8G 용량 중 7.9G 사용중이다. 패키지들이 설치한 공간이 생긴 에러였다.
+인스턴스의 용량 상태를 조회하는 명령어를 찾아서 확인해보니 인스턴스 프리티어 버전 셋팅 당시 기본으로 설정된 8G의 용량 중 7.9G 사용 중이었다. 인스턴스 용량이 없는 상태에서 프로젝트를 셋팅하면서 발생한 에러였다.
 
 <img width="839" alt="image" src="https://user-images.githubusercontent.com/18201794/221767143-34d7a262-16db-4204-a0c1-d717793b160f.png">
 
-EC2 콘솔에서 불륨 크기를 수정해준다. 비용 증감이 발생한다.
+인스턴스의 용량을 확장하기 위해서 AWS 콘솔에서 불륨 설정 화면으로 들어가서 수정해준다. 
+기존 8G에서 16G로 확장했다. 설정이 완료되면 비용 증감이 발생한다.
 
 ```
 [ec2-user@ip-172-31-42-207 articles-web]$ sudo growpart /dev/xvda 1
@@ -54,15 +55,15 @@ tmpfs          tmpfs     240M     0  240M   0% /sys/fs/cgroup
 /dev/xvda1     xfs       8.0G  7.9G  115M  99% /
 tmpfs          tmpfs      48M     0   48M   0% /run/user/1000
 ```
- 
-볼륨 크기에 맞아 파티션이 적용될 수 있도록 파티션을 확장한다.
-그리고 마지막으로 파일 시스템을 확장한다.
+
+`sudo growpart /dev/xvda 1` 명령어로 볼륨 크기에 맞게 파티션이 적용될 수 있도록 파티션도 확장한다.
+그리고 `sudo xfs_growfs -d` 로 파일 시스템까지 확장한다.
 
 ```
 [ec2-user@ip-xxx-xx-xx-xxx articles-web]$ sudo xfs_growfs -d
 ```
 
-적용된 용량을 확인한다.
+`df -hT` 적용된 용량을 확인한다.
 
 ```
 [ec2-user@ip-172-31-42-207 articles-web]$ df -hT
