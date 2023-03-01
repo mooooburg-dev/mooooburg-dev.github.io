@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS EC2 볼륨(용량) 확장하기
-description: AWS 다루기 - EC2 용량 증설하기
+description: AWS 다루기 - EC2 볼륨(용량) 증설하기
 date: 2023-02-28
 published : true
 categories: aws
