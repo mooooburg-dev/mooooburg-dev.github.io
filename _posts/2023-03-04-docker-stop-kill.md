@@ -9,6 +9,11 @@ categories: docker
 
 ![image](https://user-images.githubusercontent.com/18201794/222878453-b7bf2795-5f77-4fe5-bac9-c7c9095682d4.png)
 
+```basg
+$ docker stop [컨테이너네임]
+$ docker kill [컨테이너네임]
+```
+
 우선 stop, kill 두 명령어 모두 실행 중인 컨테이너를 종료할 때 사용하는 명령어이다.
 
 차이점은 stop은 진행 중이던 작업을 완료하고 종료시키기에 약간의 딜레이 시간이 있고
