@@ -9,7 +9,7 @@ categories: docker
 
 ![image](https://user-images.githubusercontent.com/18201794/222878453-b7bf2795-5f77-4fe5-bac9-c7c9095682d4.png)
 
-```basg
+```bash
 $ docker stop [컨테이너네임]
 $ docker kill [컨테이너네임]
 ```
