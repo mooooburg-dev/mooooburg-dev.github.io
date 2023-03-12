@@ -2,7 +2,7 @@
 layout: post
 title: Next13 개발 환경 구성하기
 description: tailwind, emotion, twin.macro, typescript로 구성한 프로젝트 준비하기
-date: 2022-02-14
+date: 2023-02-14
 published : false
 categories: next.js
 ---

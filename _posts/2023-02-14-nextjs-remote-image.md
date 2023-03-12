@@ -2,7 +2,7 @@
 layout: post
 title: Next.js에서 외부 이미지 사용하기
 description: 외부에서 가져온 이미지 Next.js Image 컴포넌트 최적화 적용하기
-date: 2022-02-14
+date: 2023-02-14
 published : true
 categories: next.js
 ---

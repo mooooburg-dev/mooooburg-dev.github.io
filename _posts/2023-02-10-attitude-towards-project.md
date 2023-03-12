@@ -2,7 +2,7 @@
 layout: post
 title: 프로젝트를 대하는 자세에 대하여
 description: 그건 내 일 아니야, 나는 개발자니까 개발만 하면 돼
-date: 2022-02-10
+date: 2023-02-10
 published : true
 categories: 개발자
 ---
