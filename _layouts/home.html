@@ -3,7 +3,7 @@ layout: page
 ---
 
 {%- if site.posts.size > 0 -%}
-<ul class="posts">
+<div class="ads-list-top">
   <script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9851663453336407"
@@ -21,6 +21,8 @@ layout: page
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
+</div>
+<ul class="posts">
   {%- for post in site.posts -%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
