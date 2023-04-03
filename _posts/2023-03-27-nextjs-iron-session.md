@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Next.js에서 iron-session을 이용해 세션 관리하기
-description: iron-session으로 보완이 강화된 세션 처리
+description: iron-session으로 보완을 강화된 세션 처리
 date: 2023-03-27
 published : true
 categories: next.js session
