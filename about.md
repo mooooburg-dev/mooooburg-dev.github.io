@@ -4,7 +4,7 @@ pagination:
   enabled: true
 ---
 
-Frontend Engineer  
+Software Engineer  
 박정무 개발노트  
   
 jeongmupark@gmail.com  
