@@ -9,7 +9,7 @@ categories: axios
 
 # Axios Interceptor란?
 Axios Interceptor는 axios의 `request`와 `response`를 가로채 필요한 기능을 추가할 수 있다.
-| axios의 return type이 Promise인 점을 이용해 특정 요청 전 부가 작업을 할 수 있게 해주는 라이브러리이다.
+axios의 return type이 Promise인 점을 이용해 특정 요청 전 부가 작업을 할 수 있게 해주는 라이브러리이다.
 
 ## Request Interceptor
 http `request`가 서버에 전달되기 전에 호출 된다. 요청 헤더 및 인증, 로깅 등을 위해서 사용한다.
