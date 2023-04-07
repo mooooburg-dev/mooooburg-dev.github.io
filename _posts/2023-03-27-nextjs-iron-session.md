@@ -23,27 +23,27 @@ categories: next.js session
 2. 세션을 위한 백엔드를 구축하지 않아도 된다.
 3. 유용한 `helper function = withIronSessionApiRoute`가 있다.
 ```javascript
-  // withIronSesstionApiRoute로 handler를 감싸준다
-  export default withIronSesstionApiRoute(
-    // 👇 handler
-    async function loginRoute(req, res) {
-      req.session.user = {
-        id: 1,
-        admin : true,
-      };
-      await req.session.save();
-      res.send({ok: true});
-    }
-  )
-  // Promise를 return 한다.
+// withIronSesstionApiRoute로 handler를 감싸준다
+export default withIronSesstionApiRoute(
+  // 👇 handler
+  async function loginRoute(req, res) {
+    req.session.user = {
+      id: 1,
+      admin : true,
+    };
+    await req.session.save();
+    res.send({ok: true});
+  }
+)
+// Promise를 return 한다.
 ```
-  - `withIronSessionApiRoute`를 통해서 감싸진 handler의 request 객체에 session 객체를 담아서 쿠키로 보내지게 된다.  
-  `withHandler`와 같이 사용했을 때
+- `withIronSessionApiRoute`를 통해서 감싸진 handler의 request 객체에 session 객체를 담아서 쿠키로 보내지게 된다.  
+`withHandler`와 같이 사용했을 때
 ```javascript
-  export default withIronSesstionApiRoute(withHandler("POST", handler), {
-    cookieName : "carrotsession",
-    password : "thisisthesomethingpassword" //password를 통해서 쿠키를 암호화/복호화한다.
-  });
+export default withIronSesstionApiRoute(withHandler("POST", handler), {
+  cookieName : "carrotsession",
+  password : "thisisthesomethingpassword" //password를 통해서 쿠키를 암호화/복호화한다.
+});
 ```
 
 ## Next.js에서 iron session과 Next API Route를 이용한 토큰 처리
