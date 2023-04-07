@@ -22,6 +22,8 @@ categories: next.js session
 1. JWT가 아니다. 암호화 되어 유저가 정보를 확인할 수 없다.
 2. 세션을 위한 백엔드를 구축하지 않아도 된다.
 3. 유용한 `helper function = withIronSessionApiRoute`가 있다.
+
+
 ```javascript
 // withIronSesstionApiRoute로 handler를 감싸준다
 export default withIronSesstionApiRoute(
@@ -37,8 +39,12 @@ export default withIronSesstionApiRoute(
 )
 // Promise를 return 한다.
 ```
+
+
 - `withIronSessionApiRoute`를 통해서 감싸진 handler의 request 객체에 session 객체를 담아서 쿠키로 보내지게 된다.  
-`withHandler`와 같이 사용했을 때
+- `withHandler`와 같이 사용하면 아래와 같이 작성한다.
+
+
 ```javascript
 export default withIronSesstionApiRoute(withHandler("POST", handler), {
   cookieName : "carrotsession",
@@ -49,4 +55,6 @@ export default withIronSesstionApiRoute(withHandler("POST", handler), {
 ## Next.js에서 iron session과 Next API Route를 이용한 토큰 처리
 로그인 한 사용자의 정보를 iron session 라이브러리를 사용해 브라우저 쿠키에 암호환 된 형태로 저장한다. 먼저 사용자의 `access token`과 `refresh token` 갱신 관리를 하는 Next API Route를 `/api/user`로 만들었다. 그리고 클라이언트에서 특정 API를 호출하면 엔드포인트까지 가기전에 Next API 안에서 토큰 상태를 확인하기 위해서 `/api/user`를 거치도록 했다.  
   
-즉 Next API Route(토큰 상태 확인)에서 다시 또 다른 Next API Route(실제 호출하는 API)에 요청을 하는 방식이다. 그런데 iron session은 `request`객체 의 `session` 안에 데이터가 저장된다. 요청 request는 클라이언트로에서 시작 된다. 클라이언트에는 브라우저 세션에 있는 쿠키에 접근이 가능하다. 즉 Next API Route에서 `request.session`으로 데이터에 액세스가 가능하다. 하지만 Next API Route에서 또 다른 Next API Route를 호출하게 되면 서버 to 서버가 되기 때문에 request 객체 안에 session이 없다. 즉, req.session이 undefined가 나오는 이슈가 생긴다. 그리고 iron session의 데이터는 사용중인 서버에서만 디코딩을 할 수 있다고 하는데 API Route에서 다른 API Route에 요청을 보낼 때 디코딩이 가능한 지 확인을 못했다. 토큰 처리는 클라이언트 사이드에서 직접 토큰 관리 API를 호출하는 것이 맞을 것 같다.
+즉 Next API Route(토큰 상태 확인)에서 다시 또 다른 Next API Route(실제 호출하는 API)에 요청을 하는 방식이다. 그런데 iron session은 `request`객체 의 `session` 안에 데이터가 저장된다. 요청 request는 클라이언트로에서 시작 된다. 클라이언트에는 브라우저 세션에 있는 쿠키에 접근이 가능하다. 즉 Next API Route에서 `request.session`으로 데이터에 액세스가 가능하다.
+  
+하지만 Next API Route에서 또 다른 Next API Route를 호출하게 되면 서버 to 서버가 되기 때문에 request 객체 안에 session이 없다. 즉, req.session이 undefined가 나오는 이슈가 생긴다. 그리고 iron session의 데이터는 사용중인 서버에서만 디코딩을 할 수 있다고 하는데 API Route에서 다른 API Route에 요청을 보낼 때 디코딩이 가능한 지 확인을 못했다. 토큰 처리는 클라이언트 사이드에서 직접 토큰 관리 API를 호출하는 것이 맞을 것 같다.
