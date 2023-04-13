@@ -60,3 +60,7 @@ const instance = axios.create();
 instance.interceptors.request.use(function () { /*...*/ });
 ```
 
+### 참고
+- https://axios-http.com/docs/interceptors  
+
+
