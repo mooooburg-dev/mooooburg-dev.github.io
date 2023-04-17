@@ -4,7 +4,7 @@ pagination:
   enabled: true
 ---
 
-Software Engineer  
+Software Engineer @Buzzni  
 박정무 개발노트  
   
 jeongmupark@gmail.com  
