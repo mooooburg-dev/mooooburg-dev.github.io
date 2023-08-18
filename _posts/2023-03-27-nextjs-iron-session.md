@@ -7,18 +7,18 @@ published : true
 categories: next.js session
 ---
 
-## iron session?
+### iron session?
 서명 및 암호화된 쿠키를 사용하여 데이터를 저장하는 Node.js의 stateless 세션 유틸리티이다. Next.js, Express 및 Node.js HTTP 서버에서 동작한다.
 세션 데이터는 암호화된 쿠키(”seals”)에 저장된다. 그리고 사용중인 서버에서만 세션 데이터를 디코딩할 수 있다. iron session은 세션 ID가 없으므로 서버 관점에서 Iron 세션을 “무상태”로 만든다.
 
-## 동작 방식
+### 동작 방식
 1. 브라우저가 서버에 요청을 보냄.
 2. 서버에서 정보를 암호화한 쿠키를 만듦.
 3. 브라우저에게 응답을 보낼 때 쿠키를 같이 보냄.
 4. 브라우저는 암호화된 쿠키를 가지고, 이후 요청에 쿠키를 같이 보내짐.
 5. 암호화된 쿠키를 받은 서버는 이를 복호화해 정보를 활용함.
 
-## 장점
+### 장점
 1. JWT가 아니다. 암호화 되어 유저가 정보를 확인할 수 없다.
 2. 세션을 위한 백엔드를 구축하지 않아도 된다.
 3. 유용한 `helper function = withIronSessionApiRoute`가 있다.
@@ -52,7 +52,7 @@ export default withIronSesstionApiRoute(withHandler("POST", handler), {
 });
 ```
 
-## Next.js에서 iron session과 Next API Route를 이용한 토큰 처리
+### Next.js에서 iron session과 Next API Route를 이용한 토큰 처리
 로그인 한 사용자의 정보를 iron session 라이브러리를 사용해 브라우저 쿠키에 암호환 된 형태로 저장한다. 먼저 사용자의 `access token`과 `refresh token` 갱신 관리를 하는 Next API Route를 `/api/user`로 만들었다. 그리고 클라이언트에서 특정 API를 호출하면 엔드포인트까지 가기전에 Next API 안에서 토큰 상태를 확인하기 위해서 `/api/user`를 거치도록 했다.  
   
 즉 Next API Route(토큰 상태 확인)에서 다시 또 다른 Next API Route(실제 호출하는 API)에 요청을 하는 방식이다. 그런데 iron session은 `request`객체 의 `session` 안에 데이터가 저장된다. 요청 request는 클라이언트로에서 시작 된다. 클라이언트에는 브라우저 세션에 있는 쿠키에 접근이 가능하다. 즉 Next API Route에서 `request.session`으로 데이터에 액세스가 가능하다.
