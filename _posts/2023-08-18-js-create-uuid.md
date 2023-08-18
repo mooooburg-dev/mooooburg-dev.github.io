@@ -4,7 +4,7 @@ title: 자바스크립트로 라이브러리 없이 UUID 함수 만들기
 description: UUID 요약 및 생성 방법
 date: 2023-08-18
 published : true
-categories: js uuid
+categories: javascript uuid
 ---
 
 ### UUID(Universally Unique IDentifier)란?
