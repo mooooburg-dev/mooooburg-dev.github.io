@@ -35,7 +35,7 @@ texture:
 header_pages:
   - about.md
 
-paginate: 5
+paginate: 10
 
 # Build settings
 # theme: texture
