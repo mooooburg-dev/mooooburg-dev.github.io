@@ -44,9 +44,11 @@ layout: page
   </li>
   {%- endfor -%}
 </ul>
+{%- endif -%}
 
-{%- include pagination.html -%} {%- endif -%}
 <!-- Pagination links -->
+{%- include pagination.html -%}
+
 <!-- <div class="pagination">
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
