@@ -161,6 +161,7 @@ header {
 
 .post-title {
   color: #222;
+  letter-spacing: -2px;
   transition: color 0.3s ease;
   margin: 0.1em 0;
   &:hover {
@@ -171,8 +172,8 @@ header {
 
 .post-description {
   font-weight: normal;
+  letter-spacing: -1px;
   color: #ddd;
-
   margin-top: 0.5em;
   margin-bottom: 1.3em;
 }
