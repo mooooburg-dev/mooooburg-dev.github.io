@@ -35,10 +35,14 @@ texture:
 header_pages:
   - about.md
 
+paginate: 5
+paginate_path: '/blog/page:num/'
+
 # Build settings
 # theme: texture
 
 asset_url: /assets
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate
 #  - jekyll-feed
