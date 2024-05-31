@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 자바스크립트에서 꼭 익혀야 할 5가지 개념 - 5.this
-description: 해당 함수가 어떻게 호출되었는지에 따라 다른 객체를 참조하는 특별한 키워드
+description: 함수가 호출 방식에 따라 다른 객체를 참조하는 조금은 특별한 키워드 this
 date: 2024-05-31
 published : true
 categories: javascript
