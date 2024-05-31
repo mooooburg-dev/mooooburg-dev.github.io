@@ -7,6 +7,7 @@ published : true
 categories: javascript
 ---
 
+### 실행 컨텍스트란?
 실행 컨텍스트(Execution Context)는 자바스크립트 코드가 실행될 때 생성되는 환경으로, 변수, 함수, 객체 등이 어떻게 실행되고 저장될지 결정하는 중요한 개념입니다. 실행 컨텍스트는 크게 세 가지 유형으로 나뉩니다.
 
 1. **전역 실행 컨텍스트(Global Execution Context)**:
