@@ -2,7 +2,7 @@
 layout: post
 title: 아이폰(iOS)에서 Input 자동 focus가 동작하지 않는 이유와 대처법
 description: 아이폰(iOS)에서 Input 자동 포커스 문제를 해결하는 방법과 UX 개선 팁
-date: 2024-08-30
+date: 2024-08-29
 published: true
 categories: ios, input, focus
 ---
