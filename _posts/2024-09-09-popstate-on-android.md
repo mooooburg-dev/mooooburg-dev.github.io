@@ -7,8 +7,6 @@ published: true
 categories: android popstate
 ---
 
-## 안드로이드 디바이스에서 `popstate` 이벤트를 사용하는 방법
-
 안드로이드 디바이스에서 웹 애플리케이션을 개발할 때, `popstate` 이벤트는 매우 유용한 기능입니다. 이 이벤트는 사용자가 브라우저의 "뒤로 가기" 버튼을 눌렀을 때 발생하며, 특히 SPA(Single Page Application) 환경에서 페이지 전환을 보다 자연스럽게 처리할 수 있게 해줍니다.
 
 ### 1. `popstate` 이벤트의 목적
