@@ -49,12 +49,12 @@ h3 {
 }
 
 h1 {
-  @include fluidType(36px, 48px);
+  @include fluidType(32px, 40px);
 }
 
 h2 {
   font-weight: bold;
-  @include fluidType(28px, 32px);
+  @include fluidType(24px, 28px);
 }
 
 h4 {
