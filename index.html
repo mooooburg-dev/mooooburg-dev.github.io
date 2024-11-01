@@ -38,8 +38,10 @@ layout: page
         <i class="icon-calendar"></i>{{ post.date | date: date_format }}
       </div>
     </div>
-    <div class="post" style="font-size: 16px">
-      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+    <div class="post" style="font-size: 16px !important">
+      <div class="post-content" style="font-size: inherit !important">
+        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+      </div>
     </div>
   </li>
   {%- endfor -%}
