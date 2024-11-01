@@ -7,8 +7,6 @@ published: true
 categories: Turbopack Next.js Bundler
 ---
 
-# Turbopack: 차세대 초고속 번들러
-
 웹 애플리케이션 성능의 핵심 요소 중 하나는 **빌드 속도와 번들 효율성**입니다. Vercel에서 개발한 **Turbopack**은 기존 번들러인 Webpack의 한계를 극복하고 성능을 획기적으로 향상하기 위해 개발되었습니다.
 
 ---
