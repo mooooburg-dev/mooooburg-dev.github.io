@@ -2,7 +2,7 @@ title: dev.note
 author: mooooburg-dev
 email: jeongmupark@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  I'm a Frontend Developer. Using Javascript, React, Next.js with Typescript. Backend side, Node.js, Spring. Here is my tech blog web page.
+  I'm a Frontend Developer. Here is my tech blog web page.
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: ''
 url: 'https://dev.drawyourmind.com'
