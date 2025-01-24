@@ -50,11 +50,11 @@ Cursor IDE에서 다음과 같은 단계를 따라 초기 코드를 생성할 �
 
 Zohaib는 기능 초안을 작성할 때 **o1**을, 반복 작업은 **Claude-3.5-sonnet**을 활용한다고 합니다. 여러분도 프로젝트 성격에 맞게 다양한 LLM을 활용해 보세요.
 
-![v0.dev screenshot](https://vercel.com/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fcontentful%2Fimage%2Fe5382hct74si%2F3CSHPVw6n6ZPBWXZfFycpp%2Fb499dbf7977ad404be660a892da2100a%2F600x300.png&w=1920&q=75)
-
 ### 2. v0.dev로 UX 쉽게 구현
 
 v0.dev 같은 툴을 사용하면 UX/UI 작업 시간을 줄이고 효율성을 극대화할 수 있습니다.
+
+![v0.dev screenshot](https://vercel.com/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fcontentful%2Fimage%2Fe5382hct74si%2F3CSHPVw6n6ZPBWXZfFycpp%2Fb499dbf7977ad404be660a892da2100a%2F600x300.png&w=1920&q=75)
 
 ### 3. 프로젝트 디렉토리 관리
 
