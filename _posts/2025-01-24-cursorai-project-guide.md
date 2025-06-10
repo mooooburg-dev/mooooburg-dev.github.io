@@ -7,7 +7,7 @@ published: true
 categories: IDE AI
 ---
 
-CursorAI 제대로 활용하고 계신가요? Microsoft의 엔지니어 [**Zohaib Rauf**](https://www.linkedin.com/in/zohaibrauf/)는 CursorAI와 LLM을 활용해 그동안 미뤄왔던 다양한 사이드 프로젝트를 빠르게 제작했다고 합니다. 오늘은 그가 추천한 방법을 바탕으로 CursorAI를 효과적으로 활용하는 3단계를 소개해 드리겠습니다.
+Microsoft의 엔지니어 [**Zohaib Rauf**](https://www.linkedin.com/in/zohaibrauf/)는 CursorAI와 LLM을 활용해 그동안 미뤄왔던 다양한 사이드 프로젝트를 빠르게 제작했다고 합니다. 오늘은 그가 추천한 방법을 바탕으로 CursorAI를 효과적으로 활용하는 3단계를 소개해 드리겠습니다.
 
 ## 1단계: **스펙 구상하기**
 
