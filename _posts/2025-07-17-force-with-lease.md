@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 협업 중 안전하게 force push 하기(git push --force-with-lease)
+title: 협업 중 안전하게 force push 하기
 description: 강제 푸시가 필요한 상황에서 실수 없이 안전하게 사용하는 방법
 date: 2025-07-17
 published: true
