@@ -23,7 +23,7 @@ git push --force-with-lease origin master
 - 조건이 붙어 있어서 누군가 먼저 커밋 올렸으면 푸시가 거부됨.
 - 실수 방지용 안전장치라고 보면 됨.
 
-⸻
+---
 
 force push 관련 명령어 정리
 
