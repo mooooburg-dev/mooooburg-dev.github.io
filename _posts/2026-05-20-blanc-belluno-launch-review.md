@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 와이프의 풍선장식 사업, 남편이 직접 홈페이지 제작한 후기
+title: 와이프의 파티풍선 사업, 남편이 홈페이지 제작한 후기
 description: Next.js 16 + Supabase + Vercel로 1주 만에 런칭한 아내 브랜드 블랑벨루노 홈페이지 제작기
 date: 2026-05-20
 published: true
@@ -8,11 +8,13 @@ categories: Next.js Supabase 사이드프로젝트
 image: /assets/images/posts/2026-05-20-blanc-belluno/cover.png
 ---
 
-![블랑벨루노 홈페이지 메인 화면](/assets/images/posts/2026-05-20-blanc-belluno/cover.png)
+[![블랑벨루노 홈페이지 메인 화면](/assets/images/posts/2026-05-20-blanc-belluno/cover.png)](https://blanc-belluno.com){:target="\_blank" rel="noopener"}
+
+> 🎈 본 사이트 보러가기 → [**blanc-belluno.com**](https://blanc-belluno.com){:target="\_blank" rel="noopener"}
 
 ## 네 줄 요약
 
-- 아내가 운영하는 파티풍선 장식 브랜드 **블랑벨루노(Blanc Belluno)** 의 홈페이지를 런칭했다
+- 아내가 운영하는 파티풍선 장식 브랜드 [**블랑벨루노(Blanc Belluno)**](https://blanc-belluno.com){:target="\_blank" rel="noopener"} 의 홈페이지를 런칭했다
 - **스택**: Next.js 16 (App Router, Turbopack) + React 19 + TypeScript + Tailwind CSS 4 + Supabase + Vercel
 - **연동**: 인스타그램 Graph API + 솔라피 카카오 알림톡
 - 핵심은 **"와이프가 직접 손쉽게 운영할 수 있는 사이트"** — 관리자 페이지에서 포트폴리오 및 히어로 슬라이드를 드래그 앤 드롭으로 관리
@@ -21,7 +23,7 @@ image: /assets/images/posts/2026-05-20-blanc-belluno/cover.png
 
 ## 1. 왜 만들었나
 
-와이프는 파티풍선 장식 브랜드 **블랑벨루노**를 운영하고 있습니다. 돌잔치, 베이비샤워, 브랜드 팝업 등 행사 풍선장식이 주력입니다.
+와이프는 파티풍선 장식 브랜드 [**블랑벨루노**](https://blanc-belluno.com){:target="\_blank" rel="noopener"}를 운영하고 있습니다. 돌잔치, 베이비샤워, 브랜드 팝업 등 행사 풍선장식이 주력입니다.
 
 문제는 모든 문의가 인스타그램 DM을 비롯한 특정 채널로만 들어온다는 점이었습니다.
 
@@ -137,3 +139,10 @@ Tailwind 4의 `@theme` 디렉티브로 **파스텔 톤 커스텀 팔레트 + 글
 - **신뢰도 상승**: 인스타만 보내던 예전과 "공식 홈페이지를 확인해 주세요"라고 안내하는 지금은 다른 비즈니스
 - **검색 자산화 시작**: 네이버·구글에 "블랑벨루노"를 검색하면 인스타 외의 자산이 노출되기 시작
 - **운영 부담 0**: 와이프가 관리자 페이지에서 직접 콘텐츠 업데이트
+
+---
+
+## 🔗 링크
+
+- 🎈 **본 사이트**: [blanc-belluno.com](https://blanc-belluno.com){:target="\_blank" rel="noopener"}
+- 📁 **프로젝트 포트폴리오**: [drawyourmind.com/works/blanc-belluno](https://drawyourmind.com/works/blanc-belluno){:target="\_blank" rel="noopener"}
