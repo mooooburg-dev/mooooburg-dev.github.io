@@ -4,14 +4,25 @@
 @import 'syntax';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
-$linkColor: #999;
 $mobileW: 768px;
 $smallMobileW: 480px;
 $bigScreenW: 1600px;
 $leftWidth: 220px;
 
-$gray: #999;
-$lightGray: #eee;
+// Refined neutral palette (slightly cool charcoal)
+$textPrimary: #2c3138; // 본문 메인
+$textHeading: #1d2128; // 제목 (본문보다 살짝 더 진함)
+$textSecondary: #5a626d; // 보조 텍스트, 인용
+$textMuted: #8a93a0; // 메타, 비활성
+$borderSoft: #e7e9ec;
+$bgSoft: #f6f7f9;
+
+$linkColor: #4a5260; // 헤더 등 비강조 링크
+$linkAccent: #3457d5; // 본문 강조 링크 (차분한 인디고 블루)
+$linkAccentHover: #233e9c;
+
+$gray: $textMuted;
+$lightGray: $borderSoft;
 
 *,
 *:before,
@@ -24,11 +35,15 @@ body {
     'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 나눔고딕,
     'Nanum Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', arial, 돋움, Dotum,
     Tahoma, Geneva, sans-serif;
-  font-size: 16px;
-  line-height: 1.55em;
+  font-size: 17px;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  color: $textPrimary;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -160,12 +175,12 @@ header {
 }
 
 .post-title {
-  color: #222;
+  color: $textHeading;
   letter-spacing: -2px;
   transition: color 0.3s ease;
   margin: 0.1em 0;
   &:hover {
-    color: $gray;
+    color: $linkAccent;
     border-bottom: 0;
   }
 }
@@ -173,7 +188,7 @@ header {
 .post-description {
   font-weight: normal;
   letter-spacing: -1px;
-  color: #ddd;
+  color: $textMuted;
   margin-top: 0.5em;
   margin-bottom: 1.3em;
 }
@@ -191,10 +206,10 @@ header {
   li {
     float: left;
     padding: 10px 20px;
-    background-color: $lightGray;
-    color: #000;
+    background-color: $bgSoft;
+    color: $textSecondary;
     margin: 5px;
-    border-radius: 2px;
+    border-radius: 4px;
     @include fluidType(15px, 17px);
     &:first-child {
       margin-left: 0;
@@ -221,6 +236,55 @@ header {
       border-bottom: 1px solid $lightGray;
     }
   }
+
+  .post {
+    font-size: 16px;
+    line-height: 1.7;
+    color: $textSecondary;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      display: inline;
+    }
+
+    p {
+      margin: 0.4em 0;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.2em;
+      margin: 0.4em 0;
+    }
+
+    blockquote {
+      margin: 0.4em 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: inherit;
+    }
+
+    img {
+      display: none;
+    }
+
+    hr {
+      display: none;
+    }
+  }
 }
 
 .posts,
@@ -239,8 +303,131 @@ header {
 }
 
 .post-container {
+  font-size: 17px;
+  line-height: 1.85;
+  letter-spacing: -0.01em;
+  color: $textPrimary;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  p {
+    margin: 1.2em 0;
+    line-height: 1.85;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    color: $textHeading;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+  }
+
+  h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid $borderSoft;
+  }
+
+  h3 {
+    @include fluidType(20px, 23px);
+  }
+
+  ul,
+  ol {
+    padding-left: 1.4em;
+    margin: 1.1em 0;
+    li {
+      margin-bottom: 0.5em;
+      line-height: 1.8;
+      &::marker {
+        color: $textMuted;
+      }
+    }
+    ul,
+    ol {
+      margin: 0.4em 0;
+    }
+  }
+
+  blockquote {
+    margin: 1.5em 0;
+    padding: 0.4em 1.2em;
+    border-left: 3px solid $linkAccent;
+    color: $textSecondary;
+    background-color: $bgSoft;
+    p {
+      margin: 0.3em 0;
+    }
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+    color: $textHeading;
+  }
+
+  em,
+  i {
+    color: $textSecondary;
+  }
+
+  a {
+    color: $linkAccent;
+    border-bottom: 1px solid rgba(52, 87, 213, 0.25);
+    transition: border-color 0.2s ease, color 0.2s ease;
+    &:hover {
+      color: $linkAccentHover;
+      border-bottom-color: $linkAccentHover;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid $borderSoft;
+    margin: 2.5em 0;
+  }
+
   img {
     margin: 20px 0;
+    border-radius: 4px;
+  }
+
+  code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.9em;
+    background-color: $bgSoft;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    color: #b5476b;
+  }
+
+  pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: 0.95em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95em;
+    th,
+    td {
+      padding: 0.6em 0.9em;
+      border: 1px solid $borderSoft;
+      text-align: left;
+    }
+    th {
+      background-color: $bgSoft;
+      font-weight: 600;
+    }
   }
 }
 
