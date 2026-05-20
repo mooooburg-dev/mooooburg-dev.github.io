@@ -39,7 +39,13 @@ layout: page
       </div>
     </div>
     <div class="post">
-      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+      {%- if site.show_excerpts -%}
+        {%- if post.description and post.description != "" -%}
+          <p>{{ post.description | strip_html | strip_newlines | truncate: 200 }}</p>
+        {%- else -%}
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}
+        {%- endif -%}
+      {%- endif -%}
     </div>
   </li>
   {%- endfor -%}
