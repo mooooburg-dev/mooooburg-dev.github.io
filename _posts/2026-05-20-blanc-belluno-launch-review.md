@@ -7,7 +7,7 @@ published: true
 categories: Next.js Supabase 사이드프로젝트
 ---
 
-## ✅ 네 줄 요약
+## 네 줄 요약
 
 - 아내가 운영하는 파티풍선 장식 브랜드 **블랑벨루노(Blanc Belluno)** 의 홈페이지를 런칭했다
 - **스택**: Next.js 16 (App Router, Turbopack) + React 19 + TypeScript + Tailwind CSS 4 + Supabase + Vercel
@@ -134,7 +134,3 @@ Tailwind 4의 `@theme` 디렉티브로 **파스텔 톤 커스텀 팔레트 + 글
 - **신뢰도 상승**: 인스타만 보내던 예전과 "공식 홈페이지를 확인해 주세요"라고 안내하는 지금은 다른 비즈니스
 - **검색 자산화 시작**: 네이버·구글에 "블랑벨루노"를 검색하면 인스타 외의 자산이 노출되기 시작
 - **운영 부담 0**: 와이프가 관리자 페이지에서 직접 콘텐츠 업데이트
-
----
-
-## 마치며
