@@ -1,0 +1,21 @@
+.gitignore
+cursor.rules
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Claude Code
+.claude/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# Editor
+.vscode/
+.idea/
+*.swp
