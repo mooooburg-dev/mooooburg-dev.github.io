@@ -1,26 +1,49 @@
 ---
+layout: null
+sitemap:
+  exclude: 'yes'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- comment -%}
+      홈은 가장 최신 포스트의 날짜를 lastmod로 사용 (빌드 시각 사용 X)
+    {%- endcomment -%}
+    {%- assign latest_post = site.posts | first -%}
+    <url>
+        <loc>{{ site.url }}/</loc>
+        {% if latest_post %}<lastmod>{{ latest_post.last_modified_at | default: latest_post.date | date_to_xmlschema }}</lastmod>{% endif %}
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     {% for post in site.posts %}
+    {% unless post.sitemap == false or post.published == false %}
     <!-- {{ post.title }} -->
     <url>
         <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+    {% endunless %}
     {% endfor %}
 
     {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
+    {% if page.layout != nil and page.layout != 'feed' and page.sitemap != false %}
+    {% unless page.url contains '.xml' or page.url contains '.txt' or page.url contains '404' %}
+    {%- comment -%}
+      페이지는 명시된 last_modified_at/date가 있을 때만 lastmod 출력
+    {%- endcomment -%}
     <!-- {{ page.title | default: page.name }} -->
     <url>
         <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-        {% if page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {% endif %}
+        {%- if page.last_modified_at or page.date %}
+        <lastmod>{{ page.last_modified_at | default: page.date | date_to_xmlschema }}</lastmod>
+        {%- endif %}
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
-    {% endif %}
+    {% endunless %}
     {% endif %}
     {% endfor %}
 </urlset>

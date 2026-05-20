@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'push() 메서드 대신 펼침 연산자로 원본의 변경을 피한다'
+description: 배열 원본을 변경하는 push() 대신 펼침 연산자로 불변(immutable) 배열을 만드는 방법
 date: 2020-05-12 23:39:38 +0530
 categories: javascript
 ---

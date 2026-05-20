@@ -1,0 +1,24 @@
+---
+permalink: /robots.txt
+layout: null
+---
+User-agent: *
+Allow: /
+
+# 네이버 검색 봇
+User-agent: Yeti
+Allow: /
+
+# 구글 검색 봇
+User-agent: Googlebot
+Allow: /
+
+# 다음 검색 봇
+User-agent: Daumoa
+Allow: /
+
+# Bing 봇
+User-agent: bingbot
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml

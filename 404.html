@@ -1,11 +1,15 @@
 ---
-title: Page Not Found
+title: 페이지를 찾을 수 없습니다
+description: 요청하신 페이지가 존재하지 않거나 이동되었습니다.
+permalink: /404.html
+sitemap: false
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'ko' }}">
   <head>
     {%- include head.html -%}
+    <meta name="robots" content="noindex,follow" />
     <style>
       h1 {
         background-color: #eee;
@@ -30,10 +34,16 @@ title: Page Not Found
         margin: 0;
         line-height: 2em;
       }
+      a {
+        font-size: 0.8em;
+        margin-top: 20px;
+        color: #555;
+      }
     </style>
   </head>
   <body>
     <h1>404</h1>
-    <p>Page not found.</p>
+    <p>요청하신 페이지를 찾을 수 없습니다.</p>
+    <a href="{{ '/' | relative_url }}">홈으로 돌아가기</a>
   </body>
 </html>

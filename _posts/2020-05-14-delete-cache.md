@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "macOS 크롬, 사파리 캐시 삭제 및 새로고침"
+description: macOS Chrome과 Safari에서 캐시를 삭제하면서 새로고침하는 단축키 정리
 date:   2020-05-14 14:46:36 +0530
 categories: os browser
 published : false

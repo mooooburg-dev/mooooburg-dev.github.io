@@ -1,11 +1,32 @@
 title: dev.note
-author: mooooburg-dev
+author:
+  name: mooooburg-dev
+  email: jeongmupark@gmail.com
+  url: https://dev.drawyourmind.com
 email: jeongmupark@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  I'm a Frontend Developer. Here is my tech blog web page.
+  프론트엔드 개발자 박정무의 기술 블로그. JavaScript, TypeScript, React, Next.js, Vue 등 웹 개발 관련 학습 기록과 실무 노하우를 공유합니다.
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: ''
 url: 'https://dev.drawyourmind.com'
+lang: ko-KR
+locale: ko_KR
+
+# 기본 OG 이미지 (포스트별 image가 없을 때 사용)
+image: /assets/og-default.png
+
+# jekyll-seo-tag 용 소셜 프로필
+social:
+  name: mooooburg-dev
+  links:
+    - https://github.com/mooooburg-dev
+    - https://linkedin.com/in/jeongmupark
+    - https://twitter.com/jeongmu
+
+# twitter card 기본값
+twitter:
+  username: jeongmu
+  card: summary_large_image
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -44,4 +65,23 @@ asset_url: /assets
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
-#  - jekyll-feed
+  - jekyll-feed
+
+# 빌드 산출물에서 제외할 파일
+exclude:
+  - README.md
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - texture.gemspec
+  - cursor.rules
+  - .cursor
+  - .vscode
+  - .claude
+  - screen1.png
+  - screen2.png
+  - node_modules
+
+# 피드 설정
+feed:
+  path: feed.xml

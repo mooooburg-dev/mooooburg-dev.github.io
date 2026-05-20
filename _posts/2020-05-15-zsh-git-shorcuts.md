@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "oh-my-zsh 터미널에서 자주 사용하는 git 단축 명령어 모음"
+description: oh-my-zsh git 플러그인에서 제공하는 자주 쓰는 단축 명령어(gst, gco, ggl, ggp 등) 모음
 date:   2020-05-15 17:05:36 +0530
 categories: git 
 ---

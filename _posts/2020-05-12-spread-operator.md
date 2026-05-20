@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '펼침 연산자를 활용해 배열을 본뜬다'
+description: ES6 펼침(spread) 연산자로 원본 배열을 복제하고 새 배열을 만드는 패턴 정리
 date: 2020-05-12 13:03:38 +0530
 categories: javascript
 ---

@@ -7,8 +7,6 @@ published: true
 categories: Next.js Supabase 사이드프로젝트
 ---
 
-# 와이프의 풍선장식 사업, 남편이 직접 홈페이지 제작한 후기
-
 ## ✅ 네 줄 요약
 
 - 아내가 운영하는 파티풍선 장식 브랜드 **블랑벨루노(Blanc Belluno)** 의 홈페이지를 런칭했다

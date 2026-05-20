@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "for in, for of 한줄 정리"
+description: ES6 반복문 for...in과 for...of의 차이점과 사용 상황 정리
 date:   2020-05-13 01:00:38 +0530
 categories: javascript
 ---
