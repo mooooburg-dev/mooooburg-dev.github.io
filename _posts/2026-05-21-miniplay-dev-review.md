@@ -5,7 +5,10 @@ description: Next.js 15 + Zustand + Web Audio API로 만든 가족용 벌칙 미
 date: 2026-05-21
 published: true
 categories: Next.js PWA 사이드프로젝트
+image: /assets/images/posts/2026-05-21-miniplay/cover.png
 ---
+
+[![miniplay 메인 화면](/assets/images/posts/2026-05-21-miniplay/cover.png)](https://miniplay.kr){:target="\_blank" rel="noopener"}
 
 > 🎮 플레이하러 가기 → [**miniplay.kr**](https://miniplay.kr){:target="\_blank" rel="noopener"}
 
