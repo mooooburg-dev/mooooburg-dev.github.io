@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 가족 미니게임 웹앱 miniplay, 아빠 개발자의 제작기
+title: 가족 미니게임 웹앱 miniplay 제작기
 description: Next.js 15 + Zustand + Web Audio API로 만든 가족용 벌칙 미니게임 모음 PWA 개발 후기
 date: 2026-05-21
 published: true
