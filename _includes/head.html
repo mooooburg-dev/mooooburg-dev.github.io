@@ -33,8 +33,6 @@
   href="{{ '/feed.xml' | absolute_url }}"
 />
 
-<title>{{ page.title | default: site.title }}</title>
-
 {%- comment -%} 검색엔진 사이트 소유 확인 {%- endcomment -%}
 <meta
   name="naver-site-verification"
@@ -43,7 +41,19 @@
 <meta name="google-adsense-account" content="ca-pub-9851663453336407" />
 
 {%- comment -%}
-  jekyll-seo-tag가 OG, Twitter Card, canonical, JSON-LD(BlogPosting / WebSite) 자동 생성.
-  중복을 피하기 위해 별도 JSON-LD는 추가하지 않음. 필요한 메타는 frontmatter(image/description/author)와 _config.yml로 보강.
+  jekyll-seo-tag가 OG, Twitter Card, canonical, title, JSON-LD(BlogPosting / WebSite)을 자동 생성한다.
+  중복을 피하기 위해 별도 JSON-LD는 추가하지 않음.
+
+  og:image 폴백: jekyll-seo-tag는 site.image를 og:image로 자동 출력하지 않으므로
+  frontmatter image가 없을 때만 site.image를 og:image / twitter:image로 직접 출력한다.
+  이 폴백이 있어야 twitter:card도 summary_large_image로 정상 작동한다.
 {%- endcomment -%}
 {% seo %}
+{%- unless page.image -%}
+  {%- if site.image -%}
+    <meta property="og:image" content="{{ site.image | absolute_url }}" />
+    <meta name="twitter:image" content="{{ site.image | absolute_url }}" />
+    {%- comment -%} seo 플러그인이 image 없을 때 summary로 다운그레이드하므로 large_image로 덮어쓴다 {%- endcomment -%}
+    <meta name="twitter:card" content="summary_large_image" />
+  {%- endif -%}
+{%- endunless -%}
