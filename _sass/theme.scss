@@ -18,8 +18,8 @@ $borderSoft: #e7e9ec;
 $bgSoft: #f6f7f9;
 
 $linkColor: #4a5260; // 헤더 등 비강조 링크
-$linkAccent: #3457d5; // 본문 강조 링크 (차분한 인디고 블루)
-$linkAccentHover: #233e9c;
+$linkAccent: #00D492; // 본문 강조 링크
+$linkAccentHover: #00a874;
 
 $gray: $textMuted;
 $lightGray: $borderSoft;
@@ -378,7 +378,7 @@ header {
 
   a {
     color: $linkAccent;
-    border-bottom: 1px solid rgba(52, 87, 213, 0.25);
+    border-bottom: 1px solid rgba(0, 212, 146, 0.25);
     transition: border-color 0.2s ease, color 0.2s ease;
     &:hover {
       color: $linkAccentHover;
