@@ -7,7 +7,7 @@ published: true
 categories: API TypeScript 오픈소스 사이드프로젝트
 ---
 
-> 📦 npm 패키지 → [**coupang-partners-sdk-standalone**](https://www.npmjs.com/package/coupang-partners-sdk-standalone){:target="\_blank" rel="noopener"}
+> 📦 npm 패키지 → [**coupang-partners-sdk-standalone**](https://www.npmjs.com/package/coupang-partners-sdk-standalone){:target="\_blank" rel="noopener"}  
 > 🧪 브라우저에서 바로 테스트 → [**Test Console 데모**](https://cp-sdk-console.vercel.app){:target="\_blank" rel="noopener"}
 
 ## 네 줄 요약
@@ -110,7 +110,7 @@ deeplink.data?.forEach((link) => {
 ```typescript
 const clicks = await client.getClicksReport({
   startDate: '20260801', // yyyyMMdd
-  endDate: '20260811',   // 시작일과 30일 이내
+  endDate: '20260811', // 시작일과 30일 이내
 });
 ```
 
@@ -118,16 +118,16 @@ const clicks = await client.getClicksReport({
 
 ## 4. 지원하는 API 한눈에 보기
 
-| 메서드 | 설명 |
-| --- | --- |
-| `searchProducts()` | 키워드 상품 검색 |
+| 메서드                               | 설명                                       |
+| ------------------------------------ | ------------------------------------------ |
+| `searchProducts()`                   | 키워드 상품 검색                           |
 | `goldbox()` / `goldboxWithFilters()` | GoldBox 특가 상품 조회(+클라이언트 필터링) |
-| `coupangPL()` | CoupangPL 상품 조회 |
-| `deeplink()` | 딥링크(제휴 링크) 생성 |
-| `getClicksReport()` | 일별 클릭 리포트 |
-| `getOrdersReport()` | 일별 주문 리포트 |
-| `getCommissionReport()` | 일별 수익 리포트 |
-| `getCancelsReport()` | 일별 취소 리포트 |
+| `coupangPL()`                        | CoupangPL 상품 조회                        |
+| `deeplink()`                         | 딥링크(제휴 링크) 생성                     |
+| `getClicksReport()`                  | 일별 클릭 리포트                           |
+| `getOrdersReport()`                  | 일별 주문 리포트                           |
+| `getCommissionReport()`              | 일별 수익 리포트                           |
+| `getCancelsReport()`                 | 일별 취소 리포트                           |
 
 에러 핸들링(HTTP/JSON 파싱), 자동 재시도, 디버그 로깅, 타임아웃 설정 등 부가 기능도 옵션으로 제공합니다.
 
