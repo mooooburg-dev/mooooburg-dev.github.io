@@ -5,7 +5,10 @@ description: Next.js Pages Router + Budibase + Slack 웹훅으로 구축한 홈�
 date: 2026-06-16
 published: true
 categories: Next.js SEO 실무
+image: /assets/images/posts/2026-06-16-hsmoa-stock-out/cover.png
 ---
+
+[![홈쇼핑 재고소진 파트너십 랜딩 페이지](/assets/images/posts/2026-06-16-hsmoa-stock-out/cover.png)](https://m.hsmoa.com/stock-out){:target="\_blank" rel="noopener"}
 
 > 📦 실제 페이지 → [**m.hsmoa.com/stock-out**](https://m.hsmoa.com/stock-out){:target="\_blank" rel="noopener"}
 
