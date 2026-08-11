@@ -7,7 +7,7 @@ published: true
 categories: API TypeScript 오픈소스 사이드프로젝트
 ---
 
-> 📦 npm 패키지 → [**coupang-partners-sdk-standalone**](https://www.npmjs.com/package/coupang-partners-sdk-standalone){:target="\_blank" rel="noopener"}  
+> 📦 npm 패키지 → [**coupang-partners-sdk-standalone**](https://www.npmjs.com/package/coupang-partners-sdk-standalone){:target="\_blank" rel="noopener"}<br>
 > 🧪 브라우저에서 바로 테스트 → [**Test Console 데모**](https://cp-sdk-console.vercel.app){:target="\_blank" rel="noopener"}
 
 ## 네 줄 요약
