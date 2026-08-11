@@ -147,3 +147,4 @@ Slack 알림 실패를 신청 실패로 처리하지 않은 것 — 코드 몇 �
 ## 🔗 링크
 
 - 📦 **재고소진 파트너십**: [m.hsmoa.com/stock-out](https://m.hsmoa.com/stock-out){:target="\_blank" rel="noopener"}
+- 📁 **프로젝트 포트폴리오**: [drawyourmind.com/works/hsmoa-stock-out](https://drawyourmind.com/works/hsmoa-stock-out){:target="\_blank" rel="noopener"}
